@@ -31,3 +31,11 @@ micromamba install -c conda-forge gdb
 ### build with debug
 
 bazel build --config=dbg //main:tg -s
+
+### run with debug
+
+bazel run //main:tg
+
+### clean 
+
+bazel clean
