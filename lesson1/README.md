@@ -41,3 +41,5 @@ bazel run //main:tg
 bazel clean
 
 ### Export micromamba environment
+
+### Import micromamba environment
