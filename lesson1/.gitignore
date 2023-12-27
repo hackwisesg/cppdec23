@@ -1,0 +1,36 @@
+# Bazel-specific files and directories
+/bazel-*
+/bazel-out/
+/bazel-bin/
+/bazel-testlogs/
+/bazel-*_execroot/
+/bazel-*_fastbuild/
+
+# IDE/Editor files (specific to your setup)
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+/external/
+/tools/
+
+# Ignore specific generated files or build artifacts
+*.bazel
+*.runfiles/
+*.tar.gz
+*.deb
+*.rpm
+*.zip
+
+# Ignore compiled object files and executables
+*.o
+*.a
+*.so
+*.out
+*.exe
+
+# Ignore system and hidden files
+.DS_Store
+Thumbs.db
