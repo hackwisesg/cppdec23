@@ -3,6 +3,7 @@
 #include "socket2.h"
 #include "include_folder1/include_folder2/utils.h"
 
+// added a dummy comment
 int main()
 {
   int x = 10; // to show debug symbols
