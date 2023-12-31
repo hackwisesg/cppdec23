@@ -36,6 +36,10 @@ bazel build --config=dbg //main:tg -s
 
 bazel run //main:tg
 
+### run google test
+
+bazel test --config=dbg //socket:sockettest
+
 ### clean 
 
 bazel clean
