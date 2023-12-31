@@ -1,0 +1,18 @@
+new_local_repository(
+    name = "gtest_repo",
+    path = "/home/jonty/micromamba/envs/cpp_env/",
+    build_file_content = """
+package(
+    default_visibility = [
+        "//visibility:public",
+    ],
+)
+
+cc_library(
+    name = "gtest",
+    srcs = ["lib/libgtest.so", "lib/libgtest_main.so"],
+    hdrs = glob(["include/gtest/**/*.h"]),
+    strip_include_prefix = "/include",
+)
+""",
+)

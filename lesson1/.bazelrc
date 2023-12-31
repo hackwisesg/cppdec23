@@ -1,4 +1,4 @@
 build --action_env=CC=g++
 build --action_env=CXX=g++
-build:opt --linkopt=-lstdc++ --copt=-O3 --copt=-Wextra --copt=-fstack-protector --copt=-std=c++0x
-build:dbg --linkopt=-lstdc++ --copt=-O3 --copt=-g --strip=never --copt=-Wextra --copt=-std=c++0x
+build:opt --linkopt=-lstdc++ --copt=-O3 --copt=-Wextra --copt=-fstack-protector --copt=-std=c++17
+build:dbg --linkopt=-lstdc++ --copt=-O3 --copt=-g --strip=never --copt=-Wextra --copt=-std=c++17
