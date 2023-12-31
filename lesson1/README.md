@@ -8,7 +8,7 @@ This lesson covers setting up your development environment and building a basic 
 
 ```bash
 curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
-micromamba shell init --shell bash --root-prefix=~/micromamba
+./micromamba shell init --shell bash --root-prefix=~/micromamba
 ```
 
 ```bash
