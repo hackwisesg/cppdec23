@@ -46,4 +46,9 @@ bazel clean
 
 ### Export micromamba environment
 
+micromamba env export -n oldenv > oldenv.yaml
+
 ### Import micromamba environment
+
+micromamba env create --name newenv --file oldenv.yaml
+
