@@ -1,6 +1,12 @@
+load("//:generate_env.bzl", "micromamba_env_repository")
+micromamba_env_repository(name = "micromamba_env")
+
+load("@micromamba_env//:micromamba_root.bzl", "MAMBA_ENV")
+print(MAMBA_ENV)
+
 new_local_repository(
     name = "gtest_repo",
-    path = "/home/jonty/micromamba/envs/cpp_env/",
+    path = MAMBA_ENV,
     build_file_content = """
 package(
     default_visibility = [
